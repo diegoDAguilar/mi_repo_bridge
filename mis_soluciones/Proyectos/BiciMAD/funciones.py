@@ -1,7 +1,7 @@
 def dist_estaciones(est1, est2, comunidad):
     """ Calcula la distancia entre 2 estaciones a partir de sus IDs
     y de la comunidad"""
-    pareja_estaciones = [e for e in comunidad.estaciones if e.id in [est1, est2]]
+    pareja_estaciones = [e for e in comunidad.estaciones if e.identificador in [est1, est2]]
 
     # Si encuentra 2 estaciones procede a realizar la comparacion
     if len(pareja_estaciones) == 2:

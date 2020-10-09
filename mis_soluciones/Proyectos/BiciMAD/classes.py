@@ -2,10 +2,10 @@ import math
 
 
 class Estacion:
-    def __init__(self, name, id, num_bicis, address, longitude,
+    def __init__(self, name, identificador, num_bicis, address, longitude,
                  latitude):
         self.name = name
-        self.id = id
+        self.identificador = identificador
         self.num_bicis = num_bicis
         self.address = address
         self.longitude = longitude
@@ -41,6 +41,9 @@ class ComunidadMadrid:
     def busca_estacion(self, estacion, tipo_busqueda):
         """Busca el valor @estacion en el param @tipo_busqueda,
         @tipo_busqueda puede ser id o name"""
+        # si se quisiese trabajar con el tema de los acentos
+        # y eliminarlos se podria usar la funcion
+        # unidecode.unidecode(e.id.lower())
         if tipo_busqueda == 'id':
             estacion = [e for e in self.estaciones if e.id == estacion]
         elif tipo_busqueda == 'name':
@@ -56,4 +59,3 @@ class ComunidadMadrid:
             estacion = estacion[0]
 
         return estacion
-

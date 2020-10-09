@@ -46,3 +46,5 @@ while True:
 
     else:
         print('Respuesta no valida')
+
+comunidad2 = ComunidadMadrid(tot_est)
