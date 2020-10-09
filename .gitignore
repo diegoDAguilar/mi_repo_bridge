@@ -8,3 +8,6 @@ PROF_*
 **/*.ipynb_checkpoints/
 .ipynb_checkpoints
 */.ipynb_checkpoints/*
+
+#dont upload tsv
+*.tsv
